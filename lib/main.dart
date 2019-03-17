@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'commonComponents/customCard.dart';
+import 'secondPage.dart';
 
 void main() => runApp(MyApp());
 
@@ -22,6 +23,9 @@ class MyApp extends StatelessWidget {
           primarySwatch: Colors.teal,
         ),
         home: MyHomePage(title: 'Flutter Demo Home Page'),
+        routes: <String, WidgetBuilder>{
+          '/a': (BuildContext context) => SecondPage(title: 'Page A'),
+        }
     );
   }
 }
